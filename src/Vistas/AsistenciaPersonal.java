@@ -34,7 +34,7 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
         table_personal = new javax.swing.JTable();
         txtBuscarPersonal = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jSpinner1 = new javax.swing.JSpinner();
+        jSpinnerFecha = new javax.swing.JSpinner();
         jLabel4 = new javax.swing.JLabel();
         btnMarcarAsistencia = new javax.swing.JButton();
 
@@ -92,8 +92,8 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
         jLabel3.setText("Fecha:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, 70, 40));
 
-        jSpinner1.setModel(new javax.swing.SpinnerDateModel());
-        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, -1, 30));
+        jSpinnerFecha.setModel(new javax.swing.SpinnerDateModel());
+        getContentPane().add(jSpinnerFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, -1, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setText("Buscar:");
@@ -176,7 +176,7 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinnerFecha;
     private javax.swing.JTable table_personal;
     private javax.swing.JTextField txtBuscarPersonal;
     // End of variables declaration//GEN-END:variables
