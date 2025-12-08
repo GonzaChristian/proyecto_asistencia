@@ -36,7 +36,9 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jSpinnerFecha = new javax.swing.JSpinner();
         jLabel4 = new javax.swing.JLabel();
+        btnMarcarTardanza = new javax.swing.JButton();
         btnMarcarAsistencia = new javax.swing.JButton();
+        btnMarcarFalta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -85,7 +87,7 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
             table_personal.getColumnModel().getColumn(5).setResizable(false);
         }
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 950, 440));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 950, 390));
         getContentPane().add(txtBuscarPersonal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 390, 30));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -99,6 +101,17 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
         jLabel4.setText("Buscar:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 70, 30));
 
+        btnMarcarTardanza.setBackground(new java.awt.Color(255, 204, 51));
+        btnMarcarTardanza.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnMarcarTardanza.setForeground(new java.awt.Color(255, 255, 255));
+        btnMarcarTardanza.setText("Marcar Tardanza");
+        btnMarcarTardanza.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMarcarTardanzaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMarcarTardanza, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 160, 160, 40));
+
         btnMarcarAsistencia.setBackground(new java.awt.Color(51, 204, 0));
         btnMarcarAsistencia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnMarcarAsistencia.setForeground(new java.awt.Color(255, 255, 255));
@@ -108,7 +121,18 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
                 btnMarcarAsistenciaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnMarcarAsistencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 140, 160, 50));
+        getContentPane().add(btnMarcarAsistencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 110, 160, 40));
+
+        btnMarcarFalta.setBackground(new java.awt.Color(255, 51, 51));
+        btnMarcarFalta.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnMarcarFalta.setForeground(new java.awt.Color(255, 255, 255));
+        btnMarcarFalta.setText("Marcar Falta");
+        btnMarcarFalta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMarcarFaltaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMarcarFalta, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 210, 160, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -121,9 +145,17 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnMenuAsistenciaActionPerformed
 
+    private void btnMarcarTardanzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMarcarTardanzaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMarcarTardanzaActionPerformed
+
     private void btnMarcarAsistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMarcarAsistenciaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnMarcarAsistenciaActionPerformed
+
+    private void btnMarcarFaltaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMarcarFaltaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMarcarFaltaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,6 +201,8 @@ public class AsistenciaPersonal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMarcarAsistencia;
+    private javax.swing.JButton btnMarcarFalta;
+    private javax.swing.JButton btnMarcarTardanza;
     private javax.swing.JButton btnMenuAsistencia;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
